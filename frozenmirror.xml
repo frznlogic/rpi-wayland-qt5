@@ -4,19 +4,19 @@
 
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="git://github.com" name="github"/>
+  <remote fetch="https://github.com" name="github"/>
   <remote fetch="git://git.linaro.org/" name="linaro"/>
 
-  <project remote="yocto" revision="jethro" name="poky" path="sources/poky"/>
-  <project remote="oe" revision="jethro" name="meta-openembedded" path="sources/meta-openembedded"/>
-  <project remote="github" revision="jethro" name="meta-qt5/meta-qt5" path="sources/meta-qt5"/>
+  <project remote="yocto" revision="nanbield" name="poky" path="sources/poky"/>
+  <project remote="oe" revision="nanbield" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="github" revision="6.6" name="YoeDistro/meta-qt6" path="sources/meta-qt6"/>
 
-  <project remote="yocto" revision="jethro" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+  <project remote="yocto" revision="nanbield" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
  <!-- <project remote="yocto" revision="master" name="meta-cloud-services"
  path="sources/meta-cloud-services"/>-->
   <project remote="github" revision="master" name="frznlogic/meta-frozenmirror" path="sources/meta-frozenmirror">
 	<copyfile dest="setup-environment" src="setup-environment"/>
-	<copyfile dest="README" src="README"/>
+	<copyfile dest="README.md" src="README.md"/>
   </project>
 
 </manifest>
